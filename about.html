@@ -1,0 +1,24 @@
+---
+layout: page
+---
+
+<img src="https://placehold.it/1280x360" alt="">
+
+<div class="jumbotron">
+  <h1><a href="/">monogarden, aewol</a></h1>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, dolorem voluptas quae excepturi cum similique officia nesciunt incidunt deleniti qui quaerat praesentium assumenda, ullam voluptatibus maxime odit officiis, laborum odio?</p>
+
+  <p><a href="/reservation/" class="btn btn-primary">예약 문의</a></p>
+</div>
+
+<div class="row">
+  <div class="container">
+    {% for room in site.rooms %}
+    <div class="col-md-6">
+      <a href="{{ room.url }}"><img src="{{ room.cover }}" alt=""></a>
+      <p>{{ room.title }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>

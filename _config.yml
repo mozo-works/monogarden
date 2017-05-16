@@ -1,0 +1,52 @@
+# Meta
+title: monogarden, aewol
+description:
+address: 제주특별자치도 제주시 애월읍 금성5길 44-16
+tel: 010-3738-9038
+
+url: https://monogarden.com
+baseurl: ''
+repository: mozo-works/monogarden
+
+timezone: 'Asia/Seoul'
+permalink: pretty
+
+# SEO
+facebook:
+  app_id: 
+  publisher: 
+logo: 
+
+google_site_verification: 
+google_analytics: 
+
+# Build
+exclude:
+  - .jekyll-metadata
+  - .gitignore
+  - .ruby-version
+  - README.md
+  - LICENSE
+
+sass:
+  style: :compressed
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  entity_output: :as_input
+  hard_wrap: false
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+
+# collections
+collections:
+  rooms:
+    output: true
+    permalink: /room/:path/
+
+defaults:
+  -
+    scope:
+      path: _rooms
+    values:
+      layout: room

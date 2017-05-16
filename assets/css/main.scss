@@ -1,0 +1,56 @@
+---
+---
+@import "variables";
+@import "bootstrap/bootstrap";
+
+.wf-loading *,
+.wf-inactive * {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:lang(en).wf-active * {
+  font-family: 'Noto Sans KR', 'Malgun Gothic';
+}
+
+:lang(en).wf-active * {
+  font-family: 'Roboto';
+}
+
+:lang(ko).wf-active .fa,
+:lang(en).wf-active .fa {
+  font-family: 'FontAwesome';
+}
+
+img {
+  max-width: 100%;
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    flex: none;
+    max-width: 50%;
+    &.text-white {
+      color: #fff;
+    }
+    &.text-muted {
+      color: #777;
+    }
+    a {
+      color: $brand-warning;
+      text-decoration: none;
+    }
+  }
+}
+
+body {
+  background-color: $brand-success;
+}
+
+.about .col-md-6 {
+  padding: 0;
+}
