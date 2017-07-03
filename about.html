@@ -1,23 +1,25 @@
 ---
 layout: page
+title: 모노가든
+cover: 01-0237.jpg
 ---
 
-<img src="https://placehold.it/1280x360" alt="">
-
-<div class="jumbotron">
-  <h1><a href="/">monogarden, aewol</a></h1>
-
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, dolorem voluptas quae excepturi cum similique officia nesciunt incidunt deleniti qui quaerat praesentium assumenda, ullam voluptatibus maxime odit officiis, laborum odio?</p>
-
-  <p><a href="/reservation/" class="btn btn-primary">예약 문의</a></p>
+<div class="jumbotron bg-cover" style="background-image: url('/assets/facilities/{{ page.cover }}');">
+  <div class="container">
+    <h1><span class="bg-primary">{{ page.title }}</span></h1>
+    <p>&nbsp;</p>
+    <p class="text-right"><span class="bg-primary">{{ site.description | newline_to_br }}</span></p>
+  </div>
 </div>
 
-<div class="row">
-  <div class="container">
+<div class="container" style="background-color: #eee; padding-top: 3rem">
+  <div class="row">
     {% for room in site.rooms %}
     <div class="col-md-6">
-      <a href="{{ room.url }}"><img src="{{ room.cover }}" alt=""></a>
-      <p>{{ room.title }}</p>
+      <div class="box" style="position: relative; margin-bottom: 3rem;">
+        <a href="{{ room.url }}"><img src="/assets/{{ room.title | slugify }}/{{ room.cover }}" alt=""></a>
+        <h2 style="position: absolute; top: 0; left: 3rem;"><span class="bg-primary">{{ room.title }}</span></h2>
+      </div>
     </div>
     {% endfor %}
   </div>

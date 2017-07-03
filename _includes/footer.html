@@ -1,11 +1,11 @@
-<footer>
+<footer style="background-color: #eee">
   <div class="container">
     <div class="row">
-      &nbsp;
       <div class="col-xs-12">
-        <address>{{ site.address }} | 예약문의 {{ site.tel }}</address>
-        <p>Copyright © {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+        <address style="margin: 3rem 0 0 0"><a href="{{ site.location }}" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i> {{ site.address }}</a> | <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:{{ site.tel | replace: '-', '' }}">{{ site.tel }}</a></address>
+        <span class="text-muted">© {{ site.time | date: '%Y' }}. {{ site.title }} all rights reserved.</span>
       </div>
+      <p>&nbsp;</p>
     </div>
   </div>
 </footer>

@@ -1,13 +1,11 @@
 ---
 
-- title: 소개
+- title: 객실
   url: /about/
 
-- title: 체험 프로그램
-  url: /courses/
+- title: 부대시설
+  url: /facilities/
 
-- title: 작품
-  url: /works/
+- title: 예약
+  url: /reservation/
 
-- title: 언론보도
-  url: /press/

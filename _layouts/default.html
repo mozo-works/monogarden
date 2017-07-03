@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
+    {% if google_site_verification %}<meta name="google-site-verification" content="{{ site.google_site_verification }}" />{% endif %}
     <meta name="description" content="{{ site.description }}">
     <link rel="alternate" href="{{ site.url }}/en" hreflang="en">
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/main.css">
     <!--[if lt IE 9]>
     <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
     <style>
@@ -20,7 +20,7 @@
   </head>
   <body{% if page.url %} class="{{ page.url | replace:'/',' ' | lstrip | rstrip }}{% if page.url == '/' %}front{% endif %}"{% endif %}>
     {% include ga.html %}
-    
+
     {{ content }}
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -30,6 +30,9 @@
     <![endif]-->
     <script>
       WebFontConfig = {
+        google: {
+          families: ['Quicksand:100', 'Roboto:100', 'Lato:100']
+        },
         custom: {
           families: [
             'Noto Sans KR:n1,n4,n7',
@@ -41,6 +44,9 @@
             '//cdn.jsdelivr.net/font-nanumsquare/1.0.0/nanumsquare.css',
             '//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'
           ]
+        },
+        active: function() {
+          sessionStorage.fonts = true;
         }
       };
       (function(d) {

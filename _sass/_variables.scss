@@ -7,8 +7,8 @@ $gray: #555;
 $gray-light: #777;
 $gray-lighter: #eee;
 
-$brand-primary: #ffcc66;
-$brand-success: #98ffb2;
+$brand-primary: #646464;
+$brand-success: #5cb85c;
 $brand-info: #5bc0de;
 $brand-warning: #fd5e0f;
 $brand-danger: #d9534f;
@@ -33,6 +33,8 @@ $display2-weight: 300 !default;
 $display3-weight: 300 !default;
 $display4-weight: 300 !default;
 
-$headings-font-family: 'Nanum Square';
+
+$headings-font-family: Lato, Roboto, 'Nanum Square';
+$headings-color: $brand-primary;
 
 @import "bootstrap/variables"

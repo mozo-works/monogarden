@@ -1,10 +1,14 @@
 # Meta
-title: monogarden, aewol
-description:
+title: MONO GARDEN
+description: |
+  소광의 파란 파도가 망망히 닿아있는 애월의 곽지 바닷가 한편에
+  일상 속 지친 나를 한 걸음 쉬게 해주는 모노가든이 있습니다.
+
 address: 제주특별자치도 제주시 애월읍 금성5길 44-16
 tel: 010-8696-4164
+location: http://naver.me/GIu8i8kw
 
-url: https://monogarden.com
+url: 
 baseurl: ''
 repository: mozo-works/monogarden
 

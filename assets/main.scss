@@ -1,0 +1,52 @@
+---
+---
+@import "variables";
+@import "bootstrap/bootstrap";
+
+img {
+  max-width: 100%;
+}
+
+.text-white {
+  color: #fff;
+  font-weight: 100;
+  &:hover {
+    color: #fff;
+  }
+}
+
+body {
+  background-color: $brand-primary;
+}
+
+.table {
+  thead th {
+    text-align: center;
+  }
+}
+
+.bg-cover {
+  background-position: center;
+  background-size: cover;
+  min-height: 320px;
+}
+
+.front {
+  .vertical-center {
+    bottom: 0;
+    height: 20vh;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 1.8;
+    h1 {
+      margin-bottom: 4rem;
+      color: #fff;
+    }
+    @media screen and (max-width: $screen-xs-max) {
+      height: 40vh;
+    }
+  }
+}

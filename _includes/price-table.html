@@ -1,0 +1,25 @@
+<table class="table table-hover table-bordered text-center">
+  <thead>
+    <tr>
+      <th style="width: 160px">시즌</th>
+      <th>주중</th>
+      <th>휴일</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>12-3월</td>
+      <td>{{ include.price.cold.weekdays | append: ' 만원' }}</td>
+      <td>{{ include.price.cold.weekends | append: ' 만원'  }}</td>
+    </tr>
+    <tr>
+      <td>4-6월 / 9-11월</td>
+      <td>{{ include.price.normal.weekdays | append: ' 만원' }}</td>
+      <td>{{ include.price.normal.weekends | append: ' 만원'  }}</td>
+    </tr>
+    <tr>
+      <td>7-8월</td>
+      <td colspan="2">{{ include.price.hot | append: ' 만원' }}</td>
+    </tr>
+  </tbody>
+</table>
