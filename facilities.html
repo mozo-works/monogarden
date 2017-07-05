@@ -1,12 +1,12 @@
 ---
 layout: page
-title: 부대시설
-cover: 01-0248.jpg
+title: 모노가든 / 심바카레 / 심바카페
+cover: 01-0237.jpg
 ---
 
 <div class="jumbotron bg-cover" style="background-image: url('/assets/facilities/{{ page.cover }}'); background-position: center">
   <div class="container">
-    <h1><span class="bg-primary">{{ page.title }}</span></h1>
+    <h2><span>{{ page.title }}</span></h2>
   </div>
 </div>
 
@@ -20,7 +20,9 @@ cover: 01-0248.jpg
     {% capture room_dir %}/assets/facilities/{% endcapture %}
       {% for file in site.static_files %}
         {% if file.path contains room_dir %}
+          {% unless file.path contains page.cover %}
         <p class="m-y-2"><img src="{{ file.path }}" alt="" class="img-fluid center-block" /></p>
+          {% endunless %}
         {% endif %}
       {% endfor %}
   </div>

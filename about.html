@@ -6,19 +6,17 @@ cover: 01-0237.jpg
 
 <div class="jumbotron bg-cover" style="background-image: url('/assets/facilities/{{ page.cover }}');">
   <div class="container">
-    <h1><span class="bg-primary">{{ page.title }}</span></h1>
     <p>&nbsp;</p>
-    <p class="text-right"><span class="bg-primary">{{ site.description | newline_to_br }}</span></p>
   </div>
 </div>
 
 <div class="container" style="background-color: #eee; padding-top: 3rem">
   <div class="row">
     {% for room in site.rooms %}
-    <div class="col-md-6">
+    <div class="col-md-12">
       <div class="box" style="position: relative; margin-bottom: 3rem;">
         <a href="{{ room.url }}"><img src="/assets/{{ room.title | slugify }}/{{ room.cover }}" alt=""></a>
-        <h2 style="position: absolute; top: 0; left: 3rem;"><span class="bg-primary">{{ room.title }}</span></h2>
+        <h2 style="position: absolute; top: 0; left: 3rem;"><span class="bg-primary" style="font-weight: 900">{{ room.title }}</span></h2>
       </div>
     </div>
     {% endfor %}
