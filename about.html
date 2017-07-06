@@ -16,7 +16,7 @@ cover: 01-0237.jpg
     <div class="col-md-12">
       <div class="box" style="position: relative; margin-bottom: 3rem;">
         <a href="{{ room.url }}"><img src="/assets/{{ room.title | slugify }}/{{ room.cover }}" alt=""></a>
-        <h2 style="position: absolute; top: 0; left: 3rem;"><span class="bg-primary" style="font-weight: 900">{{ room.title }}</span></h2>
+        <h2 style="position: absolute; top: 0; left: 3rem;"><span class="bg-primary" style="font-weight: 900">{{ room.title | downcase }}</span></h2>
       </div>
     </div>
     {% endfor %}

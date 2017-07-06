@@ -16,7 +16,7 @@ repository: mozo-works/monogarden
 timezone: 'Asia/Seoul'
 permalink: pretty
 
-amenities: '칫솔, 치약은 구비되어 있지 않습니다.'
+amenities: '칫솔, 치약, 빗은 구비되어 있지 않습니다.'
 
 # SEO
 facebook:

@@ -4,14 +4,14 @@ layout: page
 
 <div class="jumbotron bg-cover" style="background-image: url('/assets/{{ page.title | slugify }}/{{ page.cover }}');">
   <div class="container">
-    <h2><span class="bg-primary" style="font-weight: 900">{{ page.title }}</span></h2>
+    <h3><span class="bg-primary" style="font-weight: 900">{{ page.title | downcase }}</span></h3>
   </div>
 </div>
 
 <div class="container" style="background: #fff; padding-top: 2em; ">
   <div class="row">
     <div class="col-md-9">
-      <blockquote>{{ page.description | newline_to_br }}</blockquote>
+      <blockquote>{{ page.description | markdownify }}</blockquote>
 
       <h3>객실 요금</h3>
       {% include price-table.html price=page.price %}
