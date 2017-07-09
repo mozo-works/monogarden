@@ -34,6 +34,7 @@ exclude:
   - .ruby-version
   - README.md
   - LICENSE
+  - serve.sh
 
 sass:
   style: :compressed
