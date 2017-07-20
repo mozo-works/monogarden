@@ -11,7 +11,7 @@ layout: page
 <div class="container" style="background: #fff; padding-top: 2em; ">
   <div class="row">
     <div class="col-md-9">
-      <blockquote>{{ page.description | markdownify }}</blockquote>
+      <blockquote>{{ page.description | newline_to_br | markdownify }}</blockquote>
 
       <h3>객실 요금</h3>
       {% include price-table.html price=page.price %}
